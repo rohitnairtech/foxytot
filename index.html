@@ -9,14 +9,15 @@
 
     <link rel="shortcut icon" href="assets/images/head.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans|Roboto+Condensed" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
     <meta name="description" content="Kiddos fashion haven">
     <meta name="author" content="https://rohitnair.tech">
     <title>Landing</title>
     <link rel="stylesheet" href="assets/web/assets/mobirise-icons/mobirise-icons.css">
-    <link rel="stylesheet" href="assets/tether/tether.min.css">
+   
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+    
+    
     <link rel="stylesheet" href="assets/dropdown/css/style.css">
     <link rel="stylesheet" href="assets/socicon/css/styles.css">
     <link rel="stylesheet" href="assets/theme/css/style.css">
@@ -25,12 +26,122 @@
 
 
 <style type="text/css">
+/* Header Styling begins */
+
+.navbar-nav {
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: row;
+    padding-left: 15px;
+    margin-bottom: 0;
+    list-style: none;
+    text-decoration-color: #ffffff;
+    
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.navbar-nav .nav-item{
+    box-sizing: border-box;
+    color: #ffffff;
+    margin: auto;
+    padding: auto;
+
+
+}
+
+
+.navbar-lower{
+    background-color: #ff6600;
+    height: 15%;
+    text-align: center;
+    font-size: 15px;
+    align-items: center;
+    font-family: 'Oswald', sans-serif;
+    margin: auto;
+    padding: 0px;
+}
+
+#sale{
+        
+        color: #ff6600;
+        font-size: 20px;
+        left: 350px;
+        top:25px;
+        text-align: center;
+
+    }
+
+#ftd{
+        
+        color: #ff6600;
+        font-size: 20px;
+        left: 430px;
+        top:25px;
+        text-align: center;
+
+    }
+
+    ul.nav a:hover { color: #fff !important; }
+
+
+.nav-link:hover{
+    background-color: #E55B00;
+    color: #ffffff !important;
+}
+
+.nav-link:active{
+    background-color: ;
+    text-decoration-color: #ff6600;
+}
+
+.navbar-nav .nav-link {
+    padding-right: 5px;
+    padding-left: 5px;
+    color: #ffffff;
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+
+}
+
+nav.select {
+  display: none;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: #ffffff;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+@media (max-width: 576px) {
+    nav ul li{
+        margin: 10px;
+        align-items: center;
+    }
+
+@media (max-width: 960px) {
+  nav ul.navbar-nav    { display: none; }
+  nav select { display: inline-block; align-content: flex-end;}
+}
+
+@media only screen and (min-width: 768px) {
+  select {
+    display: none;
+  }
+}
+
+/* Footer Styling begins */
+
+
+
 .container footer{
     font-family: 'Archivo Narrow', sans-serif;
 }
-.navbar{
-    font-family: 'IBM Plex Sans', sans-serif;
-}
+
     .row.no-gutter {
   margin-left: 0;
   margin-right: 0;
@@ -42,20 +153,12 @@
   padding-left: 0;
 }
 
-.navbar-brand{
-    
-    
-    height: 100%;
-    margin: 0px;
-    padding: 0px;
-}
-.foot-logo{
 
-}
-.btn-nav{
-    margin-right:  20px;
-    padding: 0px;
-    margin-left: 0px;
+
+
+
+
+
 
 }
 
@@ -105,38 +208,20 @@
         margin-right: 30px;
         width: 250px;
     }
-    #find-btn{
-
-    }
-
-    #sale{
-        
-        color: #ff6600;
-        font-size: 20px;
-        left: 350px;
-        top:25px;
-        text-align: center;
-
-    }
-
-    #ftd{
-        
-        color: #ff6600;
-        font-size: 20px;
-        left: 430px;
-        top:25px;
-        text-align: center;
-
-    }
-
-    .slft{
-        
-    }
-
-
     
-    
+
+
+     body{
+  margin-top: 100px;
+}
+
+
 </style>
+<script>
+      $('.navbar-lower').affix({
+  offset: {top: 50}
+});
+    </script>
 </head>
 
 <body>
@@ -157,7 +242,7 @@
             <div class="navbar-brand">
                 <span class="navbar-logo">
                     <a href="#">
-                         <img src="assets/images/nav-brand.png" alt="#" title="" style="height: 5rem;">
+                         <img src="assets/images/head-image.png" alt="#" title="" style="height: 5rem;">
                     </a>
                 </span>
                 
@@ -166,12 +251,12 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true">
                 
-                <li class="nav-item">
-                    <button class="btn btn-primary btn-nav">SALE</button>
+                <li class="nav-item" style="font-family: 'Oswald', sans-serif; font-size: 16px;, sans-serif; color: #ff6600; margin-left:30px; margin-right: 20px;">
+                    <a href="#">SALE</a>
                 </li>
                 
-                <li class="nav-item">
-                    <button class="btn btn-primary btn-nav">FEATURED</button>
+                <li class="nav-item" style="font-family: 'Oswald', sans-serif; font-size: 16px;, sans-serif; color: #ff6600; margin-left:30px; margin-right: 20px;">
+                    <a href="#">FEATURED</a>
                 </li>
 
                                 <li>
@@ -186,13 +271,15 @@
                     </form>
                        </li>
                 
-                <li class="nav-item"><img src="assets/images/icon2.png" alt=""></li>
+                <li class="nav-item"><<img src="assets/images/icon2.png" alt=""></li>
                 <li class="nav-item"><img src="assets/images/icon1.png" alt=""></li>
                 
             </ul>
             
             
         </div>
+
+        
     </nav>
     
     
@@ -200,6 +287,37 @@
     
 
     </section>
+    <nav class="navbar navbar-lower navbar-light" role="navigation">
+
+
+  
+    <ul class="navbar-nav" style="width: 80%; margin-left: auto; margin-right: auto; font-family: 'IBM Plex Sans', sans-serif;">
+      <li class="nav-item">
+        <a class="nav-link" href="#">HOME</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">FASHION</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">HAIR</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">KIDS</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">BEAUTY</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">JEWELLERY</a>
+      </li>
+    </ul>
+
+    
+
+</nav>
+  
+</nav>
+
 
     <section class="engine"><a href="#">site design templates</a></section>
     <section class="carousel slide cid-qSG0YrXmdg" data-interval="false" id="slider1-k">
@@ -360,6 +478,7 @@
             </div>
         </div>
     </section>
+
 
     <section class="mbr-gallery mbr-slider-carousel cid-qSWqDeSEmE" id="gallery1-z">
 
@@ -581,18 +700,12 @@
 
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="assets/tether/tether.min.js"></script>
-    <script src="assets/smoothscroll/smooth-scroll.js"></script>
-    <script src="assets/dropdown/js/script.min.js"></script>
-    <script src="assets/bootstrapcarouselswipe/bootstrap-carousel-swipe.js"></script>
     <script src="assets/mbr-flip-card/mbr-flip-card.js"></script>
     <script src="assets/masonry/masonry.pkgd.min.js"></script>
-    <script src="assets/imagesloaded/imagesloaded.pkgd.min.js"></script>
     <script src="assets/mbr-testimonials-slider/mbr-testimonials-slider.js"></script>
     <script src="assets/theme/js/script.js"></script>
-    
     <script src="assets/gallery/script.js"></script>
     
 
